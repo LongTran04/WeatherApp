@@ -20,12 +20,10 @@ class HomeViewController: SFPage<HomeViewModel> {
     var homeTableBindingHelper: HomeTableBindingHelper?
     var locationManager: CLLocationManager?
     let wView = WeatherView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
-    var tempNumber = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel = homeVM
-        tempNumber = 2
     }
     
     override func initialize() {
