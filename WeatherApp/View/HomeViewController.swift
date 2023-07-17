@@ -24,6 +24,7 @@ class HomeViewController: SFPage<HomeViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel = homeVM
+        view.backgroundColor = .red
     }
     
     override func initialize() {
