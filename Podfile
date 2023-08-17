@@ -6,12 +6,15 @@ target 'WeatherApp' do
   use_frameworks!
 
   # Pods for WeatherApp
-pod 'RxSwift', '6.5.0'
-pod 'RxCocoa', '6.5.0'
+pod 'RxSwift'
+pod 'RxCocoa'
 pod 'ObjectMapper'
 pod 'PureLayout'
 pod 'Action'
 pod 'Alamofire'
 pod 'Moya'
+pod 'RxCocoa-Texture', :git => 'https://github.com/toandk/RxCocoa-Texture'
+pod 'RxASDataSources', :git => 'https://github.com/toandk/RxASDataSources'
+pod 'ASMvvm', :git => 'https://github.com/toandk/ASMvvm.git'
 
 end

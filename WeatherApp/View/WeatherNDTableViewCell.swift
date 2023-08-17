@@ -42,6 +42,7 @@ class WeatherNDTableViewCell: TableCell<WeatherNDCellViewModel> {
     }
     
     func setupUI() {
+        self.backgroundColor = .clear
         contentView.addSubview(timeLabel)
         contentView.addSubview(desWeatherLabel)
         contentView.addSubview(tempLabel)

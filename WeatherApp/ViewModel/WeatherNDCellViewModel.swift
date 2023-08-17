@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class WeatherNDCellViewModel: CellViewModel<List> {
+class WeatherNDCellViewModel: CellViewModel<ListWeather> {
     let rxTime = BehaviorRelay<Int?>(value: nil)
     let rxDes = BehaviorRelay<String?>(value: nil)
     let rxTemp = BehaviorRelay<Double?>(value: nil)

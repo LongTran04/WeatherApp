@@ -1,4 +1,4 @@
-[![CI](https://github.com/RxSwiftCommunity/Action/actions/workflows/ci.yml/badge.svg)](https://github.com/RxSwiftCommunity/Action/actions/workflows/ci.yml)
+[![CircleCI](https://circleci.com/gh/RxSwiftCommunity/Action.svg?style=svg)](https://circleci.com/gh/RxSwiftCommunity/Action)
 
 Action
 ======

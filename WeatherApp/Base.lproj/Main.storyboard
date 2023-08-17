@@ -17,17 +17,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="DLY-dO-wAM">
-                                <rect key="frame" x="20" y="89" width="285.66666666666669" height="56"/>
+                                <rect key="frame" x="20" y="89" width="275.66666666666669" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="KgJ-f6-Sqa"/>
                                 </connections>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSA-Y4-6Pu">
-                                <rect key="frame" x="305.66666666666669" y="99" width="77.333333333333314" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Search"/>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYh-Wm-a2J" customClass="WeatherView" customModule="WeatherApp" customModuleProvider="target">
                                 <rect key="frame" x="96.666666666666686" y="206" width="200" height="200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -40,16 +35,24 @@
                                 <rect key="frame" x="0.0" y="426" width="393" height="426"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSA-Y4-6Pu">
+                                <rect key="frame" x="295.66666666666669" y="89" width="77.333333333333314" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="wkA-xC-OyH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Search"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DSA-Y4-6Pu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="BY7-ab-0YV"/>
+                            <constraint firstItem="DSA-Y4-6Pu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="BY7-ab-0YV"/>
                             <constraint firstItem="QYh-Wm-a2J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HfS-d6-wfU"/>
                             <constraint firstItem="DLY-dO-wAM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HpH-26-JHj"/>
                             <constraint firstItem="QYh-Wm-a2J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-120" id="ILe-4N-asg"/>
                             <constraint firstAttribute="bottom" secondItem="a6c-SL-Hhx" secondAttribute="bottom" id="MhP-sH-NrL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DSA-Y4-6Pu" secondAttribute="trailing" constant="10" id="SkL-hF-eRQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DSA-Y4-6Pu" secondAttribute="trailing" constant="20" id="SkL-hF-eRQ"/>
                             <constraint firstItem="a6c-SL-Hhx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZMb-hN-bUB"/>
                             <constraint firstItem="DLY-dO-wAM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="ZSQ-pp-pHG"/>
                             <constraint firstItem="a6c-SL-Hhx" firstAttribute="top" secondItem="QYh-Wm-a2J" secondAttribute="bottom" constant="20" id="Zvu-hq-4ls"/>

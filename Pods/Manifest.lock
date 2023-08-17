@@ -1,51 +1,137 @@
 PODS:
-  - Action (5.0.0):
-    - RxCocoa (~> 6.0)
-    - RxSwift (~> 6.0)
+  - Action (4.2.0):
+    - RxCocoa (< 7.0, >= 5.0)
+    - RxSwift (< 7.0, >= 5.0)
   - Alamofire (5.7.1)
+  - ASMvvm (1.1.3):
+    - ObjectMapper
+    - RxASDataSources
+    - RxCocoa-Texture (~> 3.1.0)
+    - RxSwift
+    - Texture (~> 3.0.0)
+  - Differentiator (4.0.1)
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
   - ObjectMapper (4.2.0)
+  - PINCache (3.0.3):
+    - PINCache/Arc-exception-safe (= 3.0.3)
+    - PINCache/Core (= 3.0.3)
+  - PINCache/Arc-exception-safe (3.0.3):
+    - PINCache/Core
+  - PINCache/Core (3.0.3):
+    - PINOperation (~> 1.2.1)
+  - PINOperation (1.2.2)
+  - PINRemoteImage/Core (3.0.3):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.3):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.3):
+    - PINCache (~> 3.0.3)
+    - PINRemoteImage/Core
   - PureLayout (3.1.9)
-  - RxCocoa (6.5.0):
-    - RxRelay (= 6.5.0)
-    - RxSwift (= 6.5.0)
-  - RxRelay (6.5.0):
-    - RxSwift (= 6.5.0)
-  - RxSwift (6.5.0)
+  - RxASDataSources (0.5.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
+    - Texture
+  - RxCocoa (5.1.3):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxCocoa-Texture (3.1.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+    - Texture
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.3)
+  - Texture (3.0.0):
+    - Texture/AssetsLibrary (= 3.0.0)
+    - Texture/Core (= 3.0.0)
+    - Texture/MapKit (= 3.0.0)
+    - Texture/Photos (= 3.0.0)
+    - Texture/PINRemoteImage (= 3.0.0)
+    - Texture/Video (= 3.0.0)
+  - Texture/AssetsLibrary (3.0.0):
+    - Texture/Core
+  - Texture/Core (3.0.0)
+  - Texture/MapKit (3.0.0):
+    - Texture/Core
+  - Texture/Photos (3.0.0):
+    - Texture/Core
+  - Texture/PINRemoteImage (3.0.0):
+    - PINRemoteImage/iOS (~> 3.0.0)
+    - PINRemoteImage/PINCache
+    - Texture/Core
+  - Texture/Video (3.0.0):
+    - Texture/Core
 
 DEPENDENCIES:
   - Action
   - Alamofire
+  - ASMvvm (from `https://github.com/toandk/ASMvvm.git`)
   - Moya
   - ObjectMapper
   - PureLayout
-  - RxCocoa (= 6.5.0)
-  - RxSwift (= 6.5.0)
+  - RxASDataSources (from `https://github.com/toandk/RxASDataSources`)
+  - RxCocoa
+  - RxCocoa-Texture (from `https://github.com/toandk/RxCocoa-Texture`)
+  - RxSwift
 
 SPEC REPOS:
   trunk:
     - Action
     - Alamofire
+    - Differentiator
     - Moya
     - ObjectMapper
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
     - PureLayout
     - RxCocoa
     - RxRelay
     - RxSwift
+    - Texture
+
+EXTERNAL SOURCES:
+  ASMvvm:
+    :git: https://github.com/toandk/ASMvvm.git
+  RxASDataSources:
+    :git: https://github.com/toandk/RxASDataSources
+  RxCocoa-Texture:
+    :git: https://github.com/toandk/RxCocoa-Texture
+
+CHECKOUT OPTIONS:
+  ASMvvm:
+    :commit: df98ad1b4232e3d68d63da393a3ed59a23c51f66
+    :git: https://github.com/toandk/ASMvvm.git
+  RxASDataSources:
+    :commit: b5bb7a85f51a793a86896f605b587192cfcecefc
+    :git: https://github.com/toandk/RxASDataSources
+  RxCocoa-Texture:
+    :commit: 69bcc414b9d2226f909b296cf482a20375f9f6cf
+    :git: https://github.com/toandk/RxCocoa-Texture
 
 SPEC CHECKSUMS:
-  Action: 47f1825511907b4fcd79dd7a7db9526c20f78018
+  Action: 5dc2194f7a0b77857c82a677b0da655f197c005f
   Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  ASMvvm: 58e82d580997be8127e7f1dd1c2da01d946c7875
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
+  PINOperation: daa34d4aa1d8449089be7d405b9d974abc4724c6
+  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
   PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
-  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
-  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
-  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  RxASDataSources: 81764dee676512cb9623352ac7f19ced3e33a7c6
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxCocoa-Texture: b3eacb1ef3d9f8cc53f69d67fdd4c1ebbf5766e1
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
+  Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
 
-PODFILE CHECKSUM: 347b661cacd97e5464cdc8710691dce362f5f3e1
+PODFILE CHECKSUM: 81c8250025d11af8f1c1eb44f5e9577b8ec00280
 
 COCOAPODS: 1.12.1

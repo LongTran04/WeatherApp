@@ -61,6 +61,7 @@ class WeatherView: SFView<WeatherViewModel> {
     }
     
     func setupUI() {
+        self.backgroundColor = .clear
         addSubview(cityNameLabel)
         addSubview(tempLabel)
         addSubview(weatherDescLabel)
