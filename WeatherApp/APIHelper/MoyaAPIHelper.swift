@@ -70,7 +70,7 @@ enum MoyaAPI {
 extension MoyaAPI: TargetType {
     
     var APIkey: String {
-        return "9dab31bf2ab32e86722c3e6f3e28ac2d"
+        return ""
     }
     
     var baseURL: URL {

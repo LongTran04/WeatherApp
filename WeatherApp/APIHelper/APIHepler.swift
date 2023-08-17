@@ -9,7 +9,7 @@ import Foundation
 
 class APIHepler {
     static var shared = APIHepler()
-    private let APIkey = "9dab31bf2ab32e86722c3e6f3e28ac2d"
+    private let APIkey = ""
     
     func getWeatherCity(with location: Location, completion: @escaping (Result<WeatherCity, Error>) -> Void){
         let urlString = "https://api.openweathermap.org/data/2.5/weather?lat=\(location.lat)&lon=\(location.lon)&appid=\(APIkey)"
